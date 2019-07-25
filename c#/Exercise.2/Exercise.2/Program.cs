@@ -15,8 +15,6 @@ namespace Exercise._2
 
             string result = CharacterCounter.Count(word);
             Console.WriteLine(result);
-
-            Console.ReadKey();
         }
     }
 }
