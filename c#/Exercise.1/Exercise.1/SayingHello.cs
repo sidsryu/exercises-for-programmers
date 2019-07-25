@@ -6,9 +6,16 @@ namespace Exercise._1
 {
     public class SayingHello
     {
-        public static string Say()
+        public static string Say(string name)
         {
-            return "hello";
+            if (string.IsNullOrEmpty(name))
+            {
+                return $"Hello, nice to meet you!";
+            }
+            else
+            {
+                return $"Hello, {name}, nice to meet you!";
+            }            
         }
     }
 }

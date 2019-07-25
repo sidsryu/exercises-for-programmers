@@ -10,7 +10,10 @@ namespace Exercise._1
     {
         static void Main(string[] args)
         {
-            string hello = SayingHello.Say();
+            Console.Write("What is your name? ");
+            string name = Console.ReadLine();
+
+            string hello = SayingHello.Say(name);
             Console.WriteLine(hello);
         }
     }
