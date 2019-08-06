@@ -55,3 +55,7 @@ Exercises for Programmers : 57 Challenges to Develop Your Coding Skills, by Bria
 ### Exercise 10. Self-Checkout
 
   - 자동 속성 초기화
+
+### Exercise 11. Currency Conversion
+
+  - 반올림
