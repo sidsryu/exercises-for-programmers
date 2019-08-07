@@ -59,3 +59,7 @@ Exercises for Programmers : 57 Challenges to Develop Your Coding Skills, by Bria
 ### Exercise 11. Currency Conversion
 
   - 반올림
+
+### Exercise 12. Computing Simple Interest
+
+  - 없음
