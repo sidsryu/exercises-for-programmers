@@ -67,3 +67,7 @@ Exercises for Programmers : 57 Challenges to Develop Your Coding Skills, by Bria
 ### Exercise 13. Determining Compound Interest
 
   - 거듭제곱
+
+### Exercise 14. Tax Calculator
+
+  - 없음
