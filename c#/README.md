@@ -71,3 +71,7 @@ Exercises for Programmers : 57 Challenges to Develop Your Coding Skills, by Bria
 ### Exercise 14. Tax Calculator
 
   - 없음
+
+### Exercise 15. Password Validation
+
+  - 딕셔너리
