@@ -75,3 +75,7 @@ Exercises for Programmers : 57 Challenges to Develop Your Coding Skills, by Bria
 ### Exercise 15. Password Validation
 
   - 딕셔너리
+
+### Exercise 16. Legal Driving Age
+
+  - 없음
