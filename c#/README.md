@@ -79,3 +79,8 @@ Exercises for Programmers : 57 Challenges to Develop Your Coding Skills, by Bria
 ### Exercise 16. Legal Driving Age
 
   - 없음
+
+### Exercise 17. Blood Alcohol Calculator
+
+  - 열거형
+
