@@ -86,5 +86,4 @@ Exercises for Programmers : 57 Challenges to Develop Your Coding Skills, by Bria
 
 ### Exercise 18. Temperature Converter
 
-  - 없음
-  
+  - 델리게이트

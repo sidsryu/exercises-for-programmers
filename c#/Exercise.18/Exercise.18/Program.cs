@@ -16,51 +16,33 @@ namespace Exercise._18
             string inputChoice = Console.ReadLine();
 
 
-            bool shallToCelsius = inputChoice.Equals("c",
-                StringComparison.InvariantCultureIgnoreCase);
+            string sourceUnit;
+            string targetUnit;
+            Func<double, double> convert;
 
-
-            var cnv = new Conversion();
-            if (shallToCelsius)
+            if (inputChoice.Equals("c", StringComparison.OrdinalIgnoreCase))
             {
-                cnv.SourceUnit = "Fahrenheit";
-                cnv.TargetUnit = "Celsius";
+                sourceUnit = "Fahrenheit";
+                targetUnit = "Celsius";
+                convert = TemperatureConverter.FahrenheitToCelsius;
             }
             else
             {
-                cnv.SourceUnit = "Celsius";
-                cnv.TargetUnit = "Fahrenheit";
+                sourceUnit = "Celsius";
+                targetUnit = "Fahrenheit";
+                convert = TemperatureConverter.CelsiusToFahrenheit;
             }
 
 
-            Console.Write($"Please enter the temperature in {cnv.SourceUnit}: ");
-            string inputTemperature = Console.ReadLine();
+            Console.Write($"Please enter the temperature in {sourceUnit}: ");
+            string inputSourceTemp = Console.ReadLine();
 
-            double.TryParse(inputTemperature, out cnv.SourceTemperature);
-
-
-            if (shallToCelsius)
-            {
-                cnv.TargetTemperature = TemperatureConverter.FahrenheitToCelsius(
-                    cnv.SourceTemperature);
-            }
-            else
-            {
-                cnv.TargetTemperature = TemperatureConverter.CelsiusToFahrenheit(
-                    cnv.SourceTemperature);
-            }
+            double sourceTemp;
+            double.TryParse(inputSourceTemp, out sourceTemp);
 
 
-            Console.WriteLine($"The temperature in {cnv.TargetUnit} is " +
-                $"{cnv.TargetTemperature}.");
-        }
-
-        private struct Conversion
-        {
-            public double SourceTemperature;
-            public double TargetTemperature;
-            public string SourceUnit { get; set; }
-            public string TargetUnit { get; set; }
+            double targetTemp = convert.Invoke(sourceTemp);
+            Console.WriteLine($"The temperature in {targetUnit} is {targetTemp}.");
         }
     }
 }
