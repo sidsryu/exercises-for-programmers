@@ -87,3 +87,7 @@ Exercises for Programmers : 57 Challenges to Develop Your Coding Skills, by Bria
 ### Exercise 18. Temperature Converter
 
   - 델리게이트
+
+### Exercise 19. BMI Calculator
+
+  - 없음
