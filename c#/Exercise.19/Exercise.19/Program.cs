@@ -13,7 +13,7 @@ namespace Exercise._19
             Console.Write("What is your height(inches)? ");
             string inputHeight = Console.ReadLine();
 
-            Console.Write("What is your wieght(pounds)? ");
+            Console.Write("What is your weight(pounds)? ");
             string inputWeight = Console.ReadLine();
 
 
