@@ -177,6 +177,10 @@ Exercises for Programmers : 57 Challenges to Develop Your Coding Skills, by Bria
 
 ### Exercise 18. Temperature Converter
 
+- 문자열 비교
+  ```c#
+  inputChoice.Equals("c", StringComparison.OrdinalIgnoreCase)
+  ```
 - Func 델리게이트
   ```c#
   Func<double, double> convert;
